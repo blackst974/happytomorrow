@@ -24,7 +24,7 @@
 .badge{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:var(--r-full);background:var(--phl);border:1px solid var(--border);font-size:12px;font-weight:700;color:var(--primary)}
 .zone{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:var(--r-lg);border:1px solid;padding:12px 14px;margin:10px 0}.zone.green{background:var(--green-bg);border-color:var(--green-b)}.zone.orange{background:var(--orange-bg);border-color:var(--orange-b)}.zone.red{background:var(--red-bg);border-color:var(--red-b)}.zone-label{font-weight:800;font-size:14px;margin-bottom:3px}.zone-text{font-size:13px;color:var(--muted);line-height:1.4}
 .metric{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--divider);font-size:14px}.metric:last-child{border-bottom:0}.metric strong{font-weight:800}.progress-track{height:10px;background:var(--surface2);border-radius:var(--r-full);overflow:hidden;margin-top:8px}.progress-fill{height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--primary),var(--success));transition:width .4s ease;width:0%}
-.drink-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.drink-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:84px;padding:10px 6px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg)}.drink-btn .d-emoji{font-size:26px}.drink-btn .d-name{font-size:11px;font-weight:700;text-align:center;line-height:1.2}.size-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.size-btn{padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);font-weight:700;font-size:13px}.time-box{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;margin-top:8px}.time-box input{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:10px 12px}
+.drink-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.drink-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:84px;padding:10px 6px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg)}.drink-btn .d-name{font-size:11px;font-weight:700;text-align:center;line-height:1.2}.size-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.size-btn{padding:10px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);font-weight:700;font-size:13px}.time-box{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;margin-top:8px}.time-box input{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:10px 12px}
 .log-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--divider);font-size:13px}.log-item:last-child{border-bottom:0}.notif{padding:12px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);margin-bottom:8px;font-size:13px;color:var(--muted);line-height:1.45}
 .chat-log{display:flex;flex-direction:column;gap:10px;max-height:320px;overflow-y:auto;margin-bottom:12px}.bubble{max-width:88%;padding:12px 14px;border-radius:20px;font-size:14px;line-height:1.5}.bubble.user{background:var(--phl);align-self:flex-end;border-radius:20px 20px 4px 20px}.bubble.ai{background:var(--surface2);border:1px solid var(--border);align-self:flex-start;border-radius:20px 20px 20px 4px}.chat-input-row{display:flex;gap:8px}.chat-input-row input{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-lg);padding:12px 14px;font-size:14px;color:var(--text)}.chat-send{width:48px;height:48px;background:var(--primary);border-radius:var(--r-lg);font-size:18px;font-weight:900;color:#061322}
 .stars-row{margin-bottom:12px}.stars-label{font-weight:700;margin-bottom:6px;font-size:14px}.stars{display:flex;gap:6px}.star-btn{flex:1;padding:10px 0;background:var(--surface2);border:1px solid var(--border);border-radius:var(--r-md);font-size:13px;text-align:center}.star-btn.active{background:var(--phl);border-color:var(--primary)}
@@ -61,7 +61,7 @@
   </div>
   <div class="card-hero">
     <div class="badge">&#10024; Profiter pleinement aujourd'hui</div>
-    <h1 id="welcomeH1" style="font-size:26px;font-weight:900;margin:10px 0 4px">Salut &#128075;</h1>
+    <h1 id="welcomeH1" style="font-size:26px;font-weight:900;margin:10px 0 4px">Salut !</h1>
     <p class="muted">Pret pour une soiree agreable et un lendemain serein ?</p>
     <div class="status-banner"><p id="homeTip">Un bon rythme aide souvent a mieux apprecier la soiree.</p><span>&#128153;</span></div>
   </div>
@@ -239,10 +239,10 @@ var GOALS=[2,4,6,8];
 var FEELINGS=["En pleine forme","Correct","Peu importe"];
 var BED_ITEMS=["Boire 500 ml d'eau","Preparer un verre pour le reveil","Passer aux toilettes","Manger une petite collation si necessaire","Eviter un verre de plus","Reduire les ecrans","Regler une alarme"];
 var MORNING_M=[{k:"sleep",l:"Sommeil"},{k:"energy",l:"Energie"},{k:"headache",l:"Maux de tete"},{k:"nausea",l:"Nausees"},{k:"mood",l:"Humeur"}];
-var TECHS=["Boire un grand verre d'eau.","Respiration : 4s inspiration, 4s maintien, 6s expiration.","Marcher 3 minutes.","Macher un chewing-gum.","Reporter de 10 minutes."];
-var COACH_Q=["Je suis a 4 verres, conseil ?","J'ai envie d'une cigarette","Je veux prendre un autre verre","Comment ameliorer mon reveil ?"];
+var TECHS=["Boire un grand verre d'eau.","Respiration : 4s inspiration, 4s maintien, 6s expiration, repeter 5 fois.","Marcher 3 minutes.","Macher un chewing-gum.","Reporter de 10 minutes."];
+var COACH_Q=["Je suis a 4 verres, conseil ?","J'ai envie d'une cigarette","Je veux prendre un autre verre","Comment ameliorer mon reveil ?","Quel est mon etat ce soir ?","Je me sens un peu stresse"];
 var SK="happy_tomorrow_v4";
-var S={user:{name:"",sex:"Homme",age:30,height:178,weight:75},party:{active:false,goal:4,drinks:[],waters:0,startTime:null,lastDrinkAt:null,bedChecks:[]},history:[],settings:{goal:4},morningRatings:{},chat:[{role:"ai",text:"Bonsoir ! Je suis la pour t'aider a profiter de ta soiree avec legerete."}]};
+var S={user:{name:"",sex:"Homme",age:30,height:178,weight:75},party:{active:false,goal:4,drinks:[],waters:0,startTime:null,lastDrinkAt:null,bedChecks:[]},history:[],settings:{goal:4},morningRatings:{},chat:[{role:"ai",text:"Bonsoir ! Je suis la pour t'aider a profiter de ta soiree avec legerete et a preparer un lendemain confortable. Pose-moi n'importe quelle question."}]};
 function save(){try{localStorage.setItem(SK,JSON.stringify(S));}catch(e){}}
 function load(){try{var r=localStorage.getItem(SK);if(r)S=JSON.parse(r);}catch(e){}}
 function toast(m){var el=document.getElementById("toast");el.textContent=m;el.classList.add("show");clearTimeout(window._tt);window._tt=setTimeout(function(){el.classList.remove("show");},2600);}
@@ -269,7 +269,7 @@ document.querySelectorAll("[data-back]").forEach(function(b){b.addEventListener(
 function zone(){
   var d=S.party.drinks.length,w=S.party.waters,wt=S.user.weight||75;
   var sf=S.user.sex==="Femme"?0.9:1;
-  var r=d?w/d:1;
+  var r=d?w/d:2;
   var score=(d*1.2-r*0.8+Math.max(0,75-wt)/35)*sf;
   if(score<3.2)return{key:"green",badge:"Zone plaisir",label:"Zone plaisir",text:"Tu restes dans une zone compatible avec un bon lendemain.",emoji:"&#128522;"};
   if(score<5.8)return{key:"orange",badge:"Zone vigilance",label:"Zone vigilance",text:"Prendre une pause avant le prochain verre aide souvent.",emoji:"&#128578;"};
@@ -400,22 +400,80 @@ function renderLive(){
 document.getElementById("liveWaterBtn").addEventListener("click",function(){S.party.waters++;save();renderLive();toast("Hydratation enregistree !");});
 document.getElementById("qWater").addEventListener("click",function(){S.party.waters++;save();renderHome();toast("Hydratation enregistree !");});
 
+function coachReply(t){
+  var lc=t.toLowerCase();
+  var d=S.party.drinks.length,w=S.party.waters,g=S.party.goal||4;
+  var ratio=d?w/d:2;
+
+  if(lc.indexOf("cig")>=0||lc.indexOf("fum")>=0||lc.indexOf("clope")>=0){
+    var smkR=["L'envie de fumer est souvent intensifiee par l'alcool et le contexte social. Elle dure rarement plus de 5 minutes. Essaie la respiration guidee dans l'onglet dedie.",
+      "Beaucoup de gens trouvent qu'une envie de fumer disparait apres un verre d'eau et 3 minutes de marche.",
+      "Le contexte de soiree cree une association forte. Essaie de changer d'activite 2 minutes : aller chercher de l'eau, changer de piece.",
+      "Reporter de 10 minutes suffit souvent a laisser passer l'envie. Lance le minuteur dans l'onglet fumer."];
+    return smkR[Math.floor(Math.random()*smkR.length)];
+  }
+
+  if(lc.indexOf("nausee")>=0||lc.indexOf("mal au coeur")>=0||lc.indexOf("tourne")>=0||lc.indexOf("malade")>=0){
+    return "Si tu te sens mal, c'est un signal important. Arrete de boire, bois de l'eau a petites gorgees, mange quelque chose de leger si possible, et assieds-toi dans un endroit calme.";
+  }
+
+  if(lc.indexOf("autre verre")>=0||lc.indexOf("encore un")>=0||lc.indexOf("reprendre")>=0){
+    if(d>=g)return "Tu as deja atteint ton objectif de "+g+" verres. Attends 20 minutes et bois un verre d'eau. Si l'envie est toujours la, c'est souvent plus l'habitude que le besoin reel.";
+    if(d>=g-1)return "Tu es a "+(g-d)+" verre de ton objectif. Tu peux en prendre un, mais espacer avec un verre d'eau peut changer le lendemain.";
+    return "Tu es a "+d+" verres sur "+g+". Un de plus reste dans ta zone. Pense juste a accompagner avec de l'eau.";
+  }
+
+  if(lc.indexOf("reveil")>=0||lc.indexOf("lendemain")>=0||lc.indexOf("demain")>=0||lc.indexOf("matin")>=0){
+    var tips=["Boire 500ml d'eau avant de dormir est probablement la chose la plus efficace pour ameliorer le reveil.",
+      "Manger un encas glucidique leger avant de dormir (pain, crackers) aide souvent a stabiliser la glycemie et ameliore le sommeil.",
+      "Eviter les ecrans apres avoir bu aide le cerveau a mieux recuperer. La lumiere bleue perturbe le sommeil, encore plus apres l'alcool.",
+      "Regler deux alarmes avec 15 minutes d'ecart peut aider a mieux sortir du sommeil le lendemain matin."];
+    return tips[Math.floor(Math.random()*tips.length)];
+  }
+
+  if(lc.indexOf("eau")>=0||lc.indexOf("hydrat")>=0){
+    if(ratio>=1)return "Ton ratio eau/alcool est excellent ("+w+" eau pour "+d+" boissons). C'est vraiment la meilleure chose que tu puisses faire ce soir pour ton lendemain.";
+    if(ratio>=0.5)return "Tu as "+w+" verre(s) d'eau pour "+d+" boisson(s). C'est correct. Viser 1 eau pour 2 boissons est un bon objectif.";
+    return "Tu as seulement "+w+" verre(s) d'eau pour "+d+" boisson(s). Ajouter un verre maintenant serait vraiment benefique.";
+  }
+
+  if(lc.indexOf("fatigue")>=0||lc.indexOf("sommeil")>=0||lc.indexOf("dormir")>=0){
+    return "Si tu te sens fatigue, c'est souvent le bon signal pour commencer a ralentir. L'alcool perturbe les cycles de sommeil meme quand on s'endort facilement. La checklist coucher peut t'aider.";
+  }
+
+  if(lc.indexOf("stress")>=0||lc.indexOf("anxieux")>=0||lc.indexOf("anxiete")>=0||lc.indexOf("angoisse")>=0||lc.indexOf("stresse")>=0){
+    return "L'alcool reduit l'anxiete sur le moment mais peut l'augmenter le lendemain (effet rebond). La respiration guidee dans l'onglet fumer fonctionne tres bien aussi pour le stress.";
+  }
+
+  if(lc.indexOf("bilan")>=0||lc.indexOf("etat")>=0||lc.indexOf("comment je")>=0||lc.indexOf("comment vas")>=0){
+    var score=d*1.2-(ratio*0.8);
+    if(score<3.2)return "Tu es dans une bonne dynamique ce soir : "+d+" boisson(s), "+w+" verre(s) d'eau. Continue a ce rythme et la soiree devrait bien se terminer.";
+    if(score<5.8)return "Tu es en zone vigilance : "+d+" boissons pour "+w+" verre(s) d'eau. Ajouter 1-2 verres d'eau maintenant peut changer la donne pour demain.";
+    return "Tu as "+d+" boissons pour seulement "+w+" verre(s) d'eau. Le moment est bien choisi pour faire une pause et s'hydrater.";
+  }
+
+  if(lc.indexOf("conseil")>=0||lc.indexOf("aide")>=0||lc.indexOf("astuce")>=0){
+    var conseils=["Espacer les verres d'au moins 45 minutes aide beaucoup a garder un rythme confortable.",
+      "Alterner alcool et eau est l'une des strategies les plus simples et efficaces de la soiree.",
+      "Manger quelque chose maintenant ralentit l'absorption et ameliore le confort ce soir et demain.",
+      "Identifier le moment de la soiree ou tu as le plus envie de boire peut aider a mieux anticiper."];
+    return conseils[Math.floor(Math.random()*conseils.length)];
+  }
+
+  var generic=["A "+d+" boisson(s) et "+w+" verre(s) d'eau, "+(ratio>=0.5?"tu geres bien ton hydratation.":"pense a ajouter un verre d'eau bientot."),
+    "La cle d'une bonne soiree c'est souvent le rythme : espacer les verres aide beaucoup.",
+    "Tu peux poser une question plus precise sur ton etat, ton envie de fumer, ou comment preparer ton lendemain.",
+    "Manger quelque chose de leger maintenant peut ralentir l'absorption et ameliorer ton confort.",
+    "Un truc simple : pour chaque verre d'alcool, pense a ajouter un verre d'eau dans le suivi."];
+  return generic[Math.floor(Math.random()*generic.length)];
+}
+
 function renderCoach(){
   var cl=document.getElementById("chatLog");cl.innerHTML="";
   S.chat.forEach(function(m){var b=document.createElement("div");b.className="bubble "+m.role;b.textContent=m.text;cl.appendChild(b);});
   cl.scrollTop=cl.scrollHeight;
   var cs=document.getElementById("coachSuggestions");cs.innerHTML="";
   COACH_Q.forEach(function(s){var b=document.createElement("button");b.className="quick-btn";b.innerHTML="<span>&#128172;</span>"+s;b.addEventListener("click",function(){sendChat(s);});cs.appendChild(b);});
-}
-
-function coachReply(t){
-  var lc=t.toLowerCase();
-  var d=S.party.drinks.length,w=S.party.waters;
-  if(lc.indexOf("cig")>=0||lc.indexOf("fum")>=0)return"Cette envie est renforcee par le contexte. Attends quelques minutes et essaye une technique. Beaucoup d'envies passent vite.";
-  if(lc.indexOf("autre verre")>=0||lc.indexOf("encore")>=0)return"C'est ton choix. Si tu veux te sentir bien demain, attends un peu et vois comment tu te sens dans quelques minutes.";
-  if(lc.indexOf("reveil")>=0||lc.indexOf("lendemain")>=0)return"Boire de l'eau avant de dormir et manger un encas leger peuvent vraiment ameliorer le reveil.";
-  if(w<d)return"Tu peux deja faire un geste utile : ajouter un verre d'eau maintenant.";
-  return d<=4?"Tu es dans une zone confortable. Pense a t'hydrater.":"Ralentir legerement et ajouter un verre d'eau peut aider.";
 }
 
 function sendChat(text){
@@ -470,8 +528,9 @@ function renderMorning(){
     mf.appendChild(row);
     var s=document.getElementById("stars-"+m.k);
     for(var i=1;i<=5;i++){
-      var b=document.createElement("button");b.className="star-btn"+((S.morningRatings[m.k]||0)>=i?" active":"");
-      b.textContent="&#11088;";
+      var b=document.createElement("button");
+      b.className="star-btn"+((S.morningRatings[m.k]||0)>=i?" active":"");
+      b.textContent="*";
       (function(key,val){b.addEventListener("click",function(){S.morningRatings[key]=val;save();renderMorning();});})(m.k,i);
       s.appendChild(b);
     }
